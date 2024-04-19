@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const path = require("path")
+const dbDir = path.join(__dirname, "db")
+
+module.exports = {
+  'config': path.resolve(dbDir, "config.js"),
+  'options-path': path.resolve(dbDir, "options.js"),
+  'migrations-path': path.resolve(dbDir, "migrations"),
+  'seeders-path': path.resolve(dbDir, "seeders"),
+  'models-path': path.resolve(dbDir, "models"),
+}

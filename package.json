@@ -1,0 +1,25 @@
+{
+  "name": "playground-integration-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test mocha tests/**/*.test.js --file tests/integrations/setup.js --timeout 3000 --exit"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "axios": "^1.6.8",
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.5",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.4.0",
+    "sinon": "^17.0.1"
+  }
+}
